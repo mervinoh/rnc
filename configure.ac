@@ -1,0 +1,21 @@
+
+AC_PREREQ(2.59)
+
+AC_INIT(rnc, 0.1)
+
+AC_CONFIG_MACRO_DIR([m4])
+
+AC_PROG_CC
+
+# use automake
+AM_INIT_AUTOMAKE
+
+# use libtool
+LT_PREREQ(2.4)
+LT_INIT
+
+AC_CONFIG_FILES(Makefile)
+
+AC_OUTPUT
+
+echo "Done: ${PACKAGE_NAME} Version ${PACKAGE_VERSION}"
